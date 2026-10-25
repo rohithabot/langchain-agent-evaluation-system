@@ -1,0 +1,23 @@
+Agentic AI is a type of artificial intelligence that can make decisions,
+plan tasks, and execute actions using tools.
+
+LangChain is a framework used to build applications powered by
+Large Language Models (LLMs).
+
+Ollama allows developers to run open-source AI models locally
+without relying on paid cloud APIs.
+
+RAG stands for Retrieval-Augmented Generation.
+It combines information retrieval with language model generation
+to produce answers based on external documents.
+
+Vector databases store numerical representations of text called embeddings.
+
+Embeddings represent the semantic meaning of text and help retrieve
+documents that are relevant to a user's question.
+
+AI agents can use tools such as calculators, search engines,
+databases, and document retrieval systems.
+
+DeepEval is a framework used to evaluate LLM applications.
+It supports metrics such as answer relevancy and faithfulness.

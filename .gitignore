@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.conda/
+.deepeval/
+.pytest_cache/
+.vscode/
+.ipynb_checkpoints/
+agent_results.json
+evaluation_results.json
+*.log
+Untitled-1.ipynb

@@ -1,0 +1,9 @@
+# Baseline dependencies; test versions together in your environment.
+langchain
+langchain-core
+langchain-ollama
+langgraph
+deepeval
+python-dotenv
+portalocker
+# After verifying the environment, record exact tested versions in requirements-lock.txt.
