@@ -106,3 +106,48 @@ Never commit `.env`, API keys, or credentials. Pin dependency versions after con
 - The knowledge base currently consists of a small local text file.
 - LLM-based evaluator scores can vary across runs.
 - A passing tool-selection check does not prove correct execution or factual accuracy.
+
+## System Architecture
+
+The system uses LangChain to orchestrate an AI agent powered
+by a locally running Ollama model.
+
+The agent supports four tools:
+
+1. Multiply Numbers
+2. Text Analyzer
+3. Knowledge Search
+4. RAG Search
+
+The system uses an in-memory vector store and Ollama
+embeddings for knowledge retrieval.
+
+DeepEval evaluates the agent using:
+
+- Tool Correctness
+- Answer Relevancy
+- Faithfulness
+
+[View Architecture Diagram](docs/architecture.md)
+
+## Evaluation Results
+
+The initial evaluation was performed using four test cases.
+
+| Metric | Passed | Evaluated | Accuracy |
+|--------|--------|-----------|----------|
+| Tool Correctness | 4 | 4 | 100% |
+| Answer Relevancy | 4 | 4 | 100% |
+| Faithfulness | 2 | 2 | 100% |
+
+These results represent the initial test dataset and
+do not establish performance on unseen questions.
+
+## Running the Project
+
+Start Ollama and ensure the required models are available.
+
+```powershell
+ollama pull llama3.2:3b
+ollama pull nomic-embed-text
+
